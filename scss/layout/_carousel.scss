@@ -1,0 +1,47 @@
+.carousel-section{
+    position: relative;
+    img{
+        object-fit: cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+ 
+}
+.carousel-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 45%;
+}
+.carousel-scroll img{
+        position: fixed;
+        z-index: 9999;
+        bottom: 74px;
+        left: 30px;
+        width: 100%;
+        height: 71px;
+        width: 41px;
+}
+
+.carousel-display{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    color: #fff;
+    background: #333;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    img{
+        width: 26px;
+        height: 26px;
+    }
+}

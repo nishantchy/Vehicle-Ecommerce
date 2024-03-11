@@ -1,6 +1,14 @@
 // ABSTRACTS
 @import "./abstracts/variables";
+@import "./base/global";
 
 
 // PAGES
 @import "./layout/navbar";
+@import "./layout/about";
+@import "./layout/carousel";
+@import "./layout/banner";
+@import "./layout/brands";
+@import "./layout/categories";
+@import "./layout/recentproducts";
+@import "./layout/footer";
