@@ -11,9 +11,19 @@
 p {
     margin: 0;
 }
-
+body{
+    color: #333;
+    font-family: "Titillium Web", sans-serif;
+}
 .container {
     max-width: 1240px;
     padding: 0 20px;
     margin: 0 auto;
+}
+.section{
+    padding: 80px 0px 80px 0px;
+
+    @media (max-width: 767px){
+        padding: 40px 0px 40px 0px;
+    }
 }

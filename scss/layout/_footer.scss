@@ -1,20 +1,20 @@
 .footer{
-    background: #20436C;
+    background: linear-gradient(90deg, rgba(32, 67, 108, 0.92) 0%, #082241 100%);
 
     &-msg{
         p{
             color: #fff;
             max-width: 318px;
             width: 100%;
+            padding-top: 15px;
         }
     }
     &-socials-icons{
-        padding: 15px 0px 15px 0px;
+        padding: 15px 0px;
     }
     &-title{
         p{
             font-size: 20px;
-            font-family: "Titillium Web", sans-serif;
             color: #fff;
             text-transform: uppercase;
             font-weight: 500;
@@ -31,8 +31,8 @@
             a{
                 text-decoration: none;
                 color: #fff;
-                font-family: "Titillium Web", sans-serif;
                 font-size: 20px;
+                padding-top: 15px;
             }
         
         &-second{
@@ -47,16 +47,31 @@
         justify-content: start;
         align-items: center;
         gap: 15px;
+        padding-top: 15px;
 
         p{
             color: #fff;
             font-size: 18px;
         }
     }
+    &-copyright{
+        background-color: #111111;
+        p{
+            color: #fff;
+            text-align: center;
+            padding: 14px 0px;
+        }
+    }
 }
 .footer-content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 60px 0px 60px 0px;
+
+    @media (max-width: 767px){
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }

@@ -16,8 +16,8 @@
     opacity: 45%;
 }
 .carousel-scroll img{
-        position: fixed;
-        z-index: 9999;
+        position: absolute;
+        z-index: 99;
         bottom: 74px;
         left: 30px;
         width: 100%;
@@ -38,10 +38,17 @@
     width: 100%;
     padding: 15px;
     font-size: 24px;
-    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     img{
         width: 26px;
         height: 26px;
+    }
+
+    @media (max-width: 767px){
+       font-size: 18px;
+       img{
+        width: 22px;
+        height: 22px;
+    }
     }
 }
