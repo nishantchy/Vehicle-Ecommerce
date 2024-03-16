@@ -27,6 +27,7 @@
     .navbar-nav .nav-link {
         font-size: 18px;
         color: #333;
+        transition: all 0.3 ease;
         font-weight: 400;
 
         @media (max-width:767px) {
@@ -50,7 +51,7 @@
     .navbar-nav .nav-link.active:hover,
     .navbar-nav .nav-link.active.clicked {
         // transition: all 0.3s ease-in;
-        border-bottom: 1px solid #d9d9d9;
+        // border-bottom: 1px solid #d9d9d9;
 
         @media (max-width:767px) {
             color: #fff;

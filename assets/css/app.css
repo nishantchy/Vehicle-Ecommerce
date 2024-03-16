@@ -56,6 +56,7 @@ body {
 .navbar .navbar-nav .nav-link {
   font-size: 18px;
   color: #333;
+  transition: all 0.3 ease;
   font-weight: 400;
 }
 @media (max-width: 767px) {
@@ -68,10 +69,6 @@ body {
 }
 .navbar .navbar-nav .nav-item:last-child .navbar-nav .nav-link {
   border: none;
-}
-.navbar .navbar-nav .nav-link.active:hover,
-.navbar .navbar-nav .nav-link.active.clicked {
-  border-bottom: 1px solid #d9d9d9;
 }
 @media (max-width: 767px) {
   .navbar .navbar-nav .nav-link.active:hover,
