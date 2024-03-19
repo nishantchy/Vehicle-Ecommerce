@@ -16,6 +16,11 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1240px;
   padding: 0 20px;
@@ -37,6 +42,7 @@ body {
   z-index: 999;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  top: 0;
 }
 @media (max-width: 991px) {
   .navbar .collapse {
@@ -956,4 +962,95 @@ body {
     align-items: start;
     gap: 45px 0;
   }
+}
+
+.store-breadcrumb .breadcrumb {
+  color: #333;
+}
+.store-breadcrumb .breadcrumb-item a {
+  color: #333;
+  text-decoration: none;
+}
+.store-wrapper {
+  padding: 90px 0;
+}
+.store-filter {
+  border-radius: 15px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+.store-filter-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.store-filter-ttl {
+  color: #333;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  letter-spacing: -0.56px;
+}
+.store-filter-reset {
+  color: #D71212;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  letter-spacing: -0.32px;
+  text-decoration-line: underline;
+}
+.store-filter-section {
+  margin-top: 25px;
+}
+.store-filter-head-txt {
+  color: #000;
+  font-family: "Titillium Web";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.store-filter-list {
+  margin-top: 10px;
+}
+.store-filter-input {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  /* 120% */
+  letter-spacing: 0.36px;
+  gap: 10px;
+}
+.store-filter-more {
+  color: #D71212;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  margin-top: 10px;
+}
+.store-filter-range {
+  margin-top: 10px;
+}
+.store-filter-range .irs--round .irs-handle {
+  background-color: #fff;
+  border-color: #D71212;
+}
+.store-filter-range .irs--round .irs-bar {
+  background-color: #D71212;
+}
+.store-filter-range .irs--round .irs-from,
+.store-filter-range .irs--round .irs-to {
+  background-color: #D71212;
+}
+.store-filter-range .irs--round .irs-from::before,
+.store-filter-range .irs--round .irs-to::before {
+  border-top-color: #D71212;
 }/*# sourceMappingURL=app.css.map */
