@@ -593,12 +593,10 @@ img {
     line-height: 20px;
   }
 }
-@media (max-width: 991px) {
-  .banner-btn img {
-    max-width: 20px;
-    width: 100%;
-    height: 20px;
-  }
+.banner-btn img {
+  max-width: 20px;
+  width: 100%;
+  height: 20px;
 }
 @media (max-width: 767px) {
   .banner-btn img {
@@ -979,8 +977,30 @@ img {
   color: #333;
   text-decoration: none;
 }
+.store-mv {
+  margin-top: 98px;
+}
+@media (min-width: 768px) {
+  .store-mv {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .store-mv {
+    margin-top: 112px;
+  }
+}
+.store-product-img-container {
+  margin: 0 auto;
+  max-width: 249px;
+}
 .store-wrapper {
   padding: 90px 0;
+}
+@media (max-width: 767px) {
+  .store-wrapper {
+    padding: 40px 0;
+  }
 }
 .store-filter {
   border-radius: 15px;
@@ -1009,6 +1029,7 @@ img {
   line-height: 19.2px;
   letter-spacing: -0.32px;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 .store-filter-section {
   margin-top: 25px;
@@ -1062,6 +1083,12 @@ img {
 .store-filter-range .irs--round .irs-to::before {
   border-top-color: #D71212;
 }
+.store-filter-range .irs--round .irs-single {
+  background-color: #D71212;
+}
+.store-filter-range .irs--round .irs-single:before {
+  border-top-color: #D71212;
+}
 .store-product-content img {
   max-width: 249px;
   width: 100%;
@@ -1096,6 +1123,7 @@ img {
   font-size: 16px;
   line-height: 19px;
   margin-top: 9px;
+  display: block;
 }
 @media (max-width: 991px) {
   .store-product-info a {
@@ -1105,12 +1133,17 @@ img {
 }
 .store-product-row {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   align-items: stretch;
   gap: 50px 21px;
   max-width: 867px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .store-product-row {
+    gap: 20px;
+  }
 }
 .store-view {
   display: flex;
@@ -1124,7 +1157,16 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 0px 30px 39px 10px;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .store-sort {
+    margin-bottom: 20px;
+  }
+}
+.store-sort select {
+  border: 1px solid #CCC;
+  padding: 5px 10px;
 }
 .store-view-sort {
   display: flex;
@@ -1169,6 +1211,10 @@ img {
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .product-title {

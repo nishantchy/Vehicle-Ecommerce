@@ -1,19 +1,19 @@
 
 // links animations
 const buttonLoader = () => {
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll(".nav-link");
-    
-        links.forEach(function(link) {
-            link.addEventListener("click", function(event) {
-                links.forEach(function(link) {
+
+        links.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                links.forEach(function (link) {
                     link.classList.remove("clicked");
                 });
                 event.currentTarget.classList.add("clicked");
             });
         });
     });
-} 
+}
 buttonLoader();
 
 // Search button animation
@@ -25,7 +25,7 @@ const Search = () => {
 }
 
 searchBtn.onclick = (event) => {
-    event.stopPropagation(); 
+    event.stopPropagation();
     Search();
 };
 
@@ -39,3 +39,7 @@ document.addEventListener('click', (event) => {
 });
 
 
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    skin: "round", prettify_enabled: false,
+});
