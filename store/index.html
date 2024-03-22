@@ -15,6 +15,7 @@
     <!-- Bootstrap Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/app.css">
 
     <!--Plugin CSS file with desired skin-->
@@ -69,7 +70,7 @@
 
     <main id="main">
         <div class="store-mv">
-            <img src="../assets/images/store/store-mv.jpg" alt="store-mv">
+            <img src="../assets/images/carousel/carousel-img1.jpeg" alt="store-mv">
         </div>
 
         <div class="store-wrapper">
@@ -165,12 +166,14 @@
                     </div>
                     <div class=" col-lg-8 col-xl-9">
                         <div class="store-view-sort">
-                            <!-- <div class="store-view">
+                            <div class="store-view">
                                 <p class="store-view-title">View:</p>
-                                <img src="../assets/images/store/view.png" alt="">
+                                <img id="grid" src="../assets/images/store/grid.svg" alt="">
+                                <!-- <img id="grid-red" src="../assets/images/store/grid-red.svg" alt=""> -->
                                 <span class="store-line"></span>
-                                <img src="../assets/images/store/List.png" alt="">
-                            </div> -->
+                                <img id="list" src="../assets/images/store/List.svg" alt="">
+                                <!-- <img id="list-red" src="../assets/images/store/list-red.svg" alt=""> -->
+                            </div>
                             <div class="store-sort">
                                 <p class="store-sort-title">Sort:</p>
                                 <select name="" id="">
@@ -179,128 +182,226 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="store-product-row">
-                            <!-- Product container -->
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                        <!-- Grid View -->
+                        <div class="store-grid-view">
+                            <div class="store-grid-product-row">
+                                <!-- Product container -->
+                                <div class="store-grid-product-container">
+                                    <div class="store-grid-product-overlay"></div>
+                                    <div class="store-grid-product-content">
+                                        <div class="store-grid-product-img-container">
+                                            <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-grid-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
                                     </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Lorem ipsum dolor sit amet.</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- product container end -->
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
-                                    </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
+                                    <div class="store-grid-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                
+                                <div class="store-grid-product-container">
+                                    <div class="store-grid-product-overlay"></div>
+                                    <div class="store-grid-product-content">
+                                        <div class="store-grid-product-img-container">
+                                            <img src="../assets/images/store/productimg3.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-grid-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
                                     </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
-                                    </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
+                                    <div class="store-grid-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                <div class="store-grid-product-container">
+                                    <div class="store-grid-product-overlay"></div>
+                                    <div class="store-grid-product-content">
+                                        <div class="store-grid-product-img-container">
+                                            <img src="../assets/images/store/productimg.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-grid-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
                                     </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
-                                    </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
+                                    <div class="store-grid-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                <div class="store-grid-product-container">
+                                    <div class="store-grid-product-overlay"></div>
+                                    <div class="store-grid-product-content">
+                                        <div class="store-grid-product-img-container">
+                                            <img src="../assets/images/store/productimg.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-grid-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
                                     </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
-                                    </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
+                                    <div class="store-grid-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card store-product-container">
-                                <div class="store-product-content">
-                                    <div class="store-product-img-container">
-                                        <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                <div class="store-grid-product-container">
+                                    <div class="store-grid-product-overlay"></div>
+                                    <div class="store-grid-product-content">
+                                        <div class="store-grid-product-img-container">
+                                            <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-grid-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
                                     </div>
-                                    <div class="store-product-info">
-                                        <p class="product-title">Heater Core</p>
-                                        <p class="product-brand-name">Brand Name</p>
-                                        <p class="product-price">NPR. 2800.00</p>
-                                        <a href="#">View More</a>
+                                    <div class="store-grid-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
                                     </div>
                                 </div>
+                                <div class="store-grid-product-container">
+                                    <div class="store-grid-product-overlay"></div>
+                                    <div class="store-grid-product-content">
+                                        <div class="store-grid-product-img-container">
+                                            <img src="../assets/images/store/productimg3.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-grid-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-grid-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- product container end -->
                             </div>
-
                         </div>
+                        <!-- List view -->
+                        <div class="store-list-view" style="display: none;">
+                            <div class="store-list-product-row">
+                                <!-- Product container -->
+                                <div class="card store-list-product-container">
+                                    <div class="store-list-product-overlay"></div>
+                                    <div class="store-list-product-content">
+                                        <div class="store-list-product-img-container">
+                                            <img src="../assets/images/store/productimg.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-list-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-list-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="card store-list-product-container">
+                                    <div class="store-list-product-overlay"></div>
+                                    <div class="store-list-product-content">
+                                        <div class="store-list-product-img-container">
+                                            <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-list-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-list-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="card store-list-product-container">
+                                    <div class="store-list-product-overlay"></div>
+                                    <div class="store-list-product-content">
+                                        <div class="store-list-product-img-container">
+                                            <img src="../assets/images/store/productimg3.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-list-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-list-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="card store-list-product-container">
+                                    <div class="store-list-product-overlay"></div>
+                                    <div class="store-list-product-content">
+                                        <div class="store-list-product-img-container">
+                                            <img src="../assets/images/store/productimg3.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-list-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tempora.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-list-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="card store-list-product-container">
+                                    <div class="store-list-product-overlay"></div>
+                                    <div class="store-list-product-content">
+                                        <div class="store-list-product-img-container">
+                                            <img src="../assets/images/store/productimg2.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-list-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-list-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="card store-list-product-container">
+                                    <div class="store-list-product-overlay"></div>
+                                    <div class="store-list-product-content">
+                                        <div class="store-list-product-img-container">
+                                            <img src="../assets/images/store/productimg.png" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="store-list-product-info">
+                                            <p class="product-title">Lorem ipsum dolor sit amet.</p>
+                                            <p class="product-brand-name">Brand Name</p>
+                                            <p class="product-price">NPR. 2800.00</p>
+                                            <a href="#">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-list-cart">
+                                        <a href="#"><img src="../assets/images/store/cart.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- product container end -->
+                            </div>
+                        </div>
+
                         <!-- Pagination -->
                         <div class="store-pagination d-flex justify-content-center align-items-center">
                             <nav>
@@ -399,7 +500,6 @@
     <!--Plugin JavaScript file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="../assets/js/main.js"></script>
-
 
 </body>
 

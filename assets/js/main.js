@@ -43,3 +43,25 @@ $(".js-range-slider").ionRangeSlider({
     type: "double",
     skin: "round", prettify_enabled: false,
 });
+
+
+// grid and list view
+document.addEventListener("DOMContentLoaded", function() {
+    const gridViewButton = document.getElementById("grid");
+    const listViewButton = document.getElementById("list");
+    const gridView = document.querySelector(".store-grid-view");
+    const listView = document.querySelector(".store-list-view");
+
+    function switchToGridView() {
+        gridView.style.display = "block";
+        listView.style.display = "none";
+    }
+    function switchToListView() {
+        listView.style.display = "block";
+        gridView.style.display = "none";
+    }
+
+    gridViewButton.addEventListener("click", switchToGridView);
+
+    listViewButton.addEventListener("click", switchToListView);
+});
