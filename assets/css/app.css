@@ -213,6 +213,60 @@ img {
   align-items: center;
 }
 
+.nav-user {
+  position: relative;
+}
+.nav-user-login {
+  position: absolute;
+  transition: ease-in-out 0.3s;
+  bottom: -80px;
+  right: 0;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 10px 15px;
+  z-index: 99;
+  background-color: #fff;
+  width: 210px;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-user-login ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.nav-user-login ul li {
+  list-style: none;
+}
+@media (min-width: 992px) {
+  .nav-user:hover .nav-user-login {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.nav-user-txt {
+  font-size: 18px;
+  line-height: 22px;
+  flex-shrink: 0;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: #fff;
+}
+.nav-user-txt:hover {
+  color: #fff;
+  background-color: #D71212;
+}
+.nav-user-txt.active {
+  color: #fff;
+  background-color: #D71212;
+  border: none;
+}
+
 .page-title {
   padding-bottom: 40px;
   font-family: "Bebas Neue", sans-serif;
@@ -1009,8 +1063,9 @@ img {
   max-width: 249px;
 }
 .store-list-product-img-container {
-  width: 249px;
-  margin: 0 0 0 auto;
+  max-width: 250px;
+  flex: 1;
+  width: 100%;
 }
 .store-wrapper {
   padding: 90px 0;
@@ -1110,7 +1165,14 @@ img {
 .store-list-product-content {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .store-list-product-content {
+    padding: 25px 10px;
+  }
 }
 .store-list-product-content img {
   max-width: 249px;
@@ -1118,7 +1180,12 @@ img {
   height: 152px;
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 20px 13px 0px 13px;
+}
+@media (min-width: 768px) {
+  .store-list-product-content .product-title {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
 }
 .store-grid-product-content img {
   position: relative;
@@ -1131,9 +1198,8 @@ img {
 }
 .store-list-product-container {
   position: relative;
-  border-radius: 15px;
   border: 1px solid #D9D9D9;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1152,9 +1218,8 @@ img {
 }
 .store-grid-product-container {
   position: relative;
-  border-radius: 15px;
   border: 1px solid #D9D9D9;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
   width: calc(33.3333333333% - 14px);
   overflow: hidden;
 }
@@ -1221,7 +1286,8 @@ img {
   }
 }
 .store-list-product-info {
-  margin: 25px auto;
+  max-width: 100%;
+  flex: 1;
 }
 .store-list-product-info a {
   text-decoration: none;
@@ -1260,19 +1326,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 0px 30px 39px 10px;
 }
 .store-sort {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 40px;
-}
-@media (max-width: 767px) {
-  .store-sort {
-    margin-bottom: 20px;
-  }
 }
 .store-sort select {
   border: 1px solid #CCC;
@@ -1282,6 +1341,13 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .store-view-sort {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 991px) {
   .store-view-sort {
@@ -1290,11 +1356,8 @@ img {
   }
 }
 .store-view-sort img {
-  width: 25px;
-  height: 25px;
-}
-.store-view-sort img:active {
-  background-color: #D71212;
+  width: 30px;
+  height: 30px;
 }
 .store-line {
   width: 1px;
@@ -1420,32 +1483,15 @@ img {
   transform: scale(1.1);
 }
 
-.store-grid-product-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+.grid-list {
+  cursor: pointer;
 }
-
-.store-list-product-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.grid-list .grid--list-active {
+  display: none;
 }
-
-.store-grid-product-container:hover .store-grid-product-overlay {
-  opacity: 1;
+.grid-list.active .grid--list-active {
+  display: block;
 }
-
-.store-list-product-container:hover .store-list-product-overlay {
-  opacity: 1;
+.grid-list.active .grid--list-norm {
+  display: none;
 }/*# sourceMappingURL=app.css.map */

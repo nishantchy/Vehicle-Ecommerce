@@ -1,9 +1,1 @@
-<svg width="25" height="25" viewBox="0 0 25 25" fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="25" height="25" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_74_95" transform="scale(0.01)"/>
-</pattern>
-<image id="image0_74_95" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBElEQVR4nO3csQnDMBAF0F+m8AApM0pG8f5LKBhcpJWI0Tl6D1SGCH1sy6fDCQAAAAAAAMCoZ5J353hY7uvsSVrneF04n+UJZMFAtvM3dxnHfP86kH3gP2aOY77TCCQCaQWuAldI5i+0QE6eIR08Q7LeM2QrsJW17WWMN/ViFBcBAAAAuAu1rGJUe4sRSDFODKNRrhXoLNEGlPkLLZCTNqAO2oCyXhvQXuA25Jb1RSAdbHuz3raXDgIpRnERAAAAgLtQyypGtbcYgRTjxDDrnRjuBRoXNDl8EUgHV0j0ZbXiQ6Nc5ocgkMxf+GUD2Qp8Jc4X5RjjTb0YxUUAAAAAAACA/MoHmtEEpiS2bt0AAAAASUVORK5CYII="/>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="List"><g data-name="Layer 2" fill="#000" class="color000000 svgShape"><g data-name="list" fill="#000" class="color000000 svgShape"><circle cx="4" cy="7" r="1" fill="#000" class="color000000 svgShape"></circle><circle cx="4" cy="12" r="1" fill="#000" class="color000000 svgShape"></circle><circle cx="4" cy="17" r="1" fill="#000" class="color000000 svgShape"></circle><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94" fill="#000" class="color000000 svgShape"></rect><rect width="14" height="2" x="7" y="16" rx=".94" ry=".94" fill="#000" class="color000000 svgShape"></rect><rect width="14" height="2" x="7" y="6" rx=".94" ry=".94" fill="#000" class="color000000 svgShape"></rect></g></g></svg>

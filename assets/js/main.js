@@ -46,11 +46,25 @@ $(".js-range-slider").ionRangeSlider({
 
 
 // grid and list view
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const gridViewButton = document.getElementById("grid");
     const listViewButton = document.getElementById("list");
+
     const gridView = document.querySelector(".store-grid-view");
     const listView = document.querySelector(".store-list-view");
+
+
+    const gridListBtn = document.querySelectorAll(".grid-list")
+
+
+    gridListBtn.forEach(btns => {
+        btns.addEventListener("click", () => {
+            const tabId = btns.dataset.id
+
+            gridListBtn.forEach(d => d.classList.remove("active"));
+            document.getElementById(`${tabId}`).classList.add("active")
+        })
+    })
 
     function switchToGridView() {
         gridView.style.display = "block";
