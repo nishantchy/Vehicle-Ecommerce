@@ -10,14 +10,12 @@
         .collapse {
             // margin-top: 40px;
             width: 100%;
-            margin: 20px auto;
         }
     }
 
     @media (max-width: 767px) {
         .collapse {
             width: 100%;
-            margin: 20px auto;
         }
     }
 
@@ -40,6 +38,11 @@
     }
 
     .navbar-nav {
+        @media (max-width:991px) {
+            padding-top: 20px;
+        }
+
+
         .nav-item {
             &:last-child {
                 .navbar-nav .nav-link {
