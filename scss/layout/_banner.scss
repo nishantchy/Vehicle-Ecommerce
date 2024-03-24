@@ -10,6 +10,9 @@
         @media (max-width: 767px) {
             display: none;
         }
+        img{
+            transition: all 0.3s ease-in-out;
+        }
     }
 
     &-deal {
@@ -45,6 +48,7 @@
 
         p {
             transform: skew(20deg);
+            transition: all 0.3s ease-in-out;
 
             @media (max-width: 991px) {
                 font-size: 16px;
@@ -53,8 +57,9 @@
             @media (max-width: 767px) {
                 font-size: 14px;
             }
-
-
+        }
+        p:hover{
+            transform: skew(20deg) scale(1.1);
         }
     }
 
@@ -66,6 +71,9 @@
         align-items: center;
         gap: 40px;
         padding: 50px 0px;
+    }
+    &-container:hover .banner-img img{
+        transform: scale(1.1);
     }
 
     &-content {
@@ -157,6 +165,7 @@
         a {
             text-decoration: none;
             color: #313131;
+            transition: all 0.2s ease-in-out;
 
             @media (max-width: 991px) {
                 font-size: 14px;
@@ -174,6 +183,7 @@
             max-width: 20px;
             width: 100%;
             height: 20px;
+            transition: all 0.2s ease-in-out;
 
             @media (max-width: 767px) {
                 max-width: 15px;
@@ -184,7 +194,13 @@
         }
     }
 
-    &-btn:hover {
+    &-btn:hover{
         opacity: 0.8;
+    }
+    &-btn:hover img{
+        transform: scale(1.1);
+    }
+    &-btn:hover a{
+        transform: scale(1.1);
     }
 }
