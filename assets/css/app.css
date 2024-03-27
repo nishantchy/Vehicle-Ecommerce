@@ -706,7 +706,7 @@ img {
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 100%;
   width: 100%;
   margin: auto;
   padding: 20px !important;
