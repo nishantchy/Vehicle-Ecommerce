@@ -7,6 +7,7 @@
     max-width: 1000px;
     width: 100%;
     margin: auto;
+    padding: 20px !important;
 
     @media (max-width:767px) {
         gap: 10px 30px;
@@ -25,7 +26,12 @@
             width: 100%;
         }
     }
-    img:hover{
+
+    img:hover {
         transform: scale(1.2);
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
     }
 }

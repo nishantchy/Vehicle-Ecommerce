@@ -709,6 +709,7 @@ img {
   max-width: 1000px;
   width: 100%;
   margin: auto;
+  padding: 20px !important;
 }
 @media (max-width: 767px) {
   .brand-content {
@@ -731,6 +732,9 @@ img {
 }
 .brand-content img:hover {
   transform: scale(1.2);
+}
+.brand-content .swiper-wrapper {
+  transition-timing-function: linear;
 }
 
 .page-title-second {

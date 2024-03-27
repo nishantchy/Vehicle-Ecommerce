@@ -202,16 +202,49 @@
 
         <section class="container section">
             <h2 class="page-title">Brands we rely on</h2>
-            <div class="brand-content">
-                <img src="./assets/images/brands/mahindra.png" alt="">
-                <img src="./assets/images/brands/suzuki.png" alt="">
-                <img src="./assets/images/brands/kia.png" alt="">
-                <img src="./assets/images/brands/tata.png" alt="">
-                <img src="./assets/images/brands/hyundai.png" alt="">
-                <img src="./assets/images/brands/bajaj.png" alt="">
-                <img src="./assets/images/brands/renault.png" alt="">
-                <img src="./assets/images/brands/tvs.png" alt="">
-                <img src="./assets/images/brands/mercedes.png" alt="">
+            <div class="brand-content swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/mahindra.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/suzuki.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/kia.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/tata.png" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <img src="./assets/images/brands/hyundai.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/bajaj.png" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/renault.png" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/tvs.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/brands/mercedes.png" alt="">
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- Maintenance spare parts -->
@@ -358,6 +391,36 @@
                     slidesPerView: 2,
                     spaceBetween: 40,
                 },
+            },
+            navigation: {
+                nextEl: '.choose-swiper-next',
+                prevEl: '.choose-swiper-prev',
+            },
+        });
+
+
+        const brands = new Swiper(".brand-content", {
+            slidesPerView: 3,
+            loop: true,
+            spaceBetween: 30,
+            speed: 2000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                },
+
+
+                992: {
+                    slidesPerView: 8,
+                    spaceBetween: 40,
+                },
+
+
             },
             navigation: {
                 nextEl: '.choose-swiper-next',
