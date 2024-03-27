@@ -424,7 +424,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 15px;
 }
 
@@ -434,6 +434,24 @@ img {
 
 .choose {
   padding-bottom: 83px;
+}
+
+.choose-main-container {
+  position: relative;
+}
+
+.test {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  z-index: 99;
+}
+
+.choose-btn-container img {
+  width: 30px;
+  height: 30px;
 }
 
 .carousel-section {
