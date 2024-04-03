@@ -782,35 +782,37 @@ img {
 }
 
 .view-more {
-  font-size: 22px;
-  color: #333;
+  font-size: 18px;
+  color: #fff;
+  background: #20436c;
+  padding: 10px;
   text-transform: uppercase;
   font-weight: 400;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
+
 @media (max-width: 1199px) {
   .view-more {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 991px) {
   .view-more {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   .view-more {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
-
 .view-more:hover {
   transform: scale(1.1);
 }
