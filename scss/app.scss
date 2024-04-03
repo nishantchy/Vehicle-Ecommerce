@@ -2,7 +2,6 @@
 @import "./abstracts/variables";
 @import "./base/global";
 
-
 // PAGES
 @import "./layout/navbar";
 @import "./layout/about";
@@ -13,5 +12,6 @@
 @import "./layout/recentproducts";
 @import "./layout/footer";
 
-// PAGES 
-@import './pages/store'
+// PAGES
+@import "./pages/store";
+@import "./pages/productDetail";

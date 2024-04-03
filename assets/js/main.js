@@ -1,81 +1,77 @@
-
 // links animations
 const buttonLoader = () => {
-    document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll(".nav-link");
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".nav-link");
 
+    links.forEach(function (link) {
+      link.addEventListener("click", function (event) {
         links.forEach(function (link) {
-            link.addEventListener("click", function (event) {
-                links.forEach(function (link) {
-                    link.classList.remove("clicked");
-                });
-                event.currentTarget.classList.add("clicked");
-            });
+          link.classList.remove("clicked");
         });
+        event.currentTarget.classList.add("clicked");
+      });
     });
-}
+  });
+};
 buttonLoader();
 
 // Search button animation
-const searchBtn = document.getElementById('search-btn');
-const searchOpen = document.getElementById('search-open');
+const searchBtn = document.getElementById("search-btn");
+const searchOpen = document.getElementById("search-open");
 
 const Search = () => {
-    searchOpen.classList.toggle("active");
-}
-
-searchBtn.onclick = (event) => {
-    event.stopPropagation();
-    Search();
+  searchOpen.classList.toggle("active");
 };
 
-document.addEventListener('click', (event) => {
-    const isClickInsideSearch = searchOpen.contains(event.target);
-    const isClickOnSearchBtn = searchBtn.contains(event.target);
+searchBtn.onclick = (event) => {
+  event.stopPropagation();
+  Search();
+};
 
-    if (!isClickInsideSearch && !isClickOnSearchBtn) {
-        searchOpen.classList.remove("active");
-    }
+document.addEventListener("click", (event) => {
+  const isClickInsideSearch = searchOpen.contains(event.target);
+  const isClickOnSearchBtn = searchBtn.contains(event.target);
+
+  if (!isClickInsideSearch && !isClickOnSearchBtn) {
+    searchOpen.classList.remove("active");
+  }
 });
-
 
 $(".js-range-slider").ionRangeSlider({
-    type: "double",
-    skin: "round", prettify_enabled: false,
+  type: "double",
+  skin: "round",
+  prettify_enabled: false,
 });
-
 
 // grid and list view
 document.addEventListener("DOMContentLoaded", function () {
-    const gridViewButton = document.getElementById("grid");
-    const listViewButton = document.getElementById("list");
+  const gridViewButton = document.getElementById("grid");
+  const listViewButton = document.getElementById("list");
 
-    const gridView = document.querySelector(".store-grid-view");
-    const listView = document.querySelector(".store-list-view");
+  const gridView = document.querySelector(".store-grid-view");
+  const listView = document.querySelector(".store-list-view");
 
+  const gridListBtn = document.querySelectorAll(".grid-list");
 
-    const gridListBtn = document.querySelectorAll(".grid-list")
+  gridListBtn.forEach((btns) => {
+    btns.addEventListener("click", () => {
+      const tabId = btns.dataset.id;
 
+      gridListBtn.forEach((d) => d.classList.remove("active"));
+      document.getElementById(`${tabId}`).classList.add("active");
+    });
+  });
 
-    gridListBtn.forEach(btns => {
-        btns.addEventListener("click", () => {
-            const tabId = btns.dataset.id
+  function switchToGridView() {
+    gridView.style.display = "block";
+    listView.style.display = "none";
+  }
+  function switchToListView() {
+    listView.style.display = "block";
+    gridView.style.display = "none";
+  }
 
-            gridListBtn.forEach(d => d.classList.remove("active"));
-            document.getElementById(`${tabId}`).classList.add("active")
-        })
-    })
+  gridViewButton.addEventListener("click", switchToGridView);
 
-    function switchToGridView() {
-        gridView.style.display = "block";
-        listView.style.display = "none";
-    }
-    function switchToListView() {
-        listView.style.display = "block";
-        gridView.style.display = "none";
-    }
-
-    gridViewButton.addEventListener("click", switchToGridView);
-
-    listViewButton.addEventListener("click", switchToListView);
+  listViewButton.addEventListener("click", switchToListView);
 });
