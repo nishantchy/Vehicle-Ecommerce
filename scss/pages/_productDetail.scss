@@ -1,9 +1,9 @@
-.swiper {
-  width: 100%;
-  height: 100%;
-}
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
 
-.swiper-slide {
+.product-swiper {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.product-swiper img {
   display: block;
   width: 100%;
   height: 100%;
@@ -21,15 +21,7 @@
 .bottom-img img {
   border: 1px solid #082241;
 }
-
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
+.product-swiper {
   background-size: cover;
   background-position: center;
 }
@@ -46,7 +38,7 @@
   //   background: linear-gradient(90deg, rgba(32, 67, 108, 0.92) 0%, #082241 100%);
 }
 
-.mySwiper .swiper-slide {
+.mySwiper .product-swiper {
   width: 25%;
   height: 100%;
   opacity: 0.4;
@@ -56,7 +48,7 @@
   opacity: 1;
 }
 
-.swiper-slide img {
+.product-swiper img {
   display: block;
   width: 100%;
   height: 100%;

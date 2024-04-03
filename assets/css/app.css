@@ -425,7 +425,6 @@ img {
   align-items: center;
   gap: 10px;
   justify-content: space-between;
-  margin-top: 15px;
 }
 
 .choose-container:hover img {
@@ -1572,12 +1571,7 @@ img {
   margin: auto;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
+.product-swiper {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1586,7 +1580,7 @@ img {
   align-items: center;
 }
 
-.swiper-slide img {
+.product-swiper img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1598,14 +1592,7 @@ img {
   border: 1px solid #082241;
 }
 
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
+.product-swiper {
   background-size: cover;
   background-position: center;
 }
@@ -1621,7 +1608,7 @@ img {
   padding: 10px 0;
 }
 
-.mySwiper .swiper-slide {
+.mySwiper .product-swiper {
   width: 25%;
   height: 100%;
   opacity: 0.4;
@@ -1631,7 +1618,7 @@ img {
   opacity: 1;
 }
 
-.swiper-slide img {
+.product-swiper img {
   display: block;
   width: 100%;
   height: 100%;
