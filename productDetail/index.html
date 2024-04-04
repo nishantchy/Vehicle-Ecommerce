@@ -184,6 +184,23 @@
                 value="+"
               />
             </div>
+            <div class="row product-details-colors-section margins">
+              <ul>
+                <li id="first" class="color-first"></li>
+                <li id="second" class="color-second"></li>
+                <li id="third" class="color-third"></li>
+              </ul>
+            </div>
+            <div class="row product-details-size-section margins">
+              <ul>
+                <li class="size-btn" id="small">S</li>
+                <li class="size-btn" id="medium">M</li>
+                <li class="size-btn" id="large">L</li>
+                <li class="size-btn" id="extra-large">XL</li>
+                <li class="size-btn" id="extra-extra-large">XXL</li>
+              </ul>
+            </div>
+
             <div class="product-details-cart margins">
               <button class="product-details-addToCart-btn">Add to Cart</button>
             </div>
@@ -389,8 +406,9 @@
         },
       });
     </script>
-    <!-- quantity buttons -->
+
     <script>
+      //  <!-- quantity buttons -->
       document.addEventListener("DOMContentLoaded", function () {
         var quantityInput = document.getElementById("quantity");
         var incrementBtn = document.getElementById("increment");
@@ -412,6 +430,29 @@
           } else {
             quantityInput.value = 1;
           }
+        });
+      });
+      // color
+      document.addEventListener("DOMContentLoaded", function () {
+        const colorItems = document.querySelectorAll(
+          ".product-details-colors-section li"
+        );
+        colorItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            colorItems.forEach((item) => item.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+      // size
+      document.addEventListener("DOMContentLoaded", function () {
+        const sizeButtons = document.querySelectorAll(".size-btn");
+
+        sizeButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            sizeButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+          });
         });
       });
     </script>

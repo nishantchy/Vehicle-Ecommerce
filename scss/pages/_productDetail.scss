@@ -68,6 +68,10 @@
     background: #fff;
     // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 50px;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
     @media (max-width: 767px) {
       flex-direction: column;
     }
@@ -125,6 +129,94 @@
       gap: 20px;
     }
   }
+  &-colors-section {
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li {
+        list-style: none;
+        cursor: pointer;
+      }
+      .color-first {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        outline: 1px solid #bebebe;
+        outline-offset: 3px;
+        border-radius: 2px;
+      }
+      .color-first.active {
+        transform: scale(1.1);
+        outline: 1px solid #333;
+      }
+      .color-first:hover {
+        transform: scale(1.1);
+        outline: 1px solid #333;
+      }
+      .color-second {
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        outline: 1px solid #bebebe;
+        outline-offset: 3px;
+        border-radius: 2px;
+      }
+      .color-second.active {
+        transform: scale(1.1);
+        outline: 1px solid #333;
+      }
+      .color-second:hover {
+        transform: scale(1.1);
+        outline: 1px solid #333;
+      }
+      .color-third {
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        outline: 1px solid #bebebe;
+        outline-offset: 3px;
+        border-radius: 2px;
+      }
+      .color-third.active {
+        transform: scale(1.1);
+        outline: 1px solid #333;
+      }
+      .color-third:hover {
+        transform: scale(1.1);
+        outline: 1px solid #333;
+      }
+    }
+  }
+  &-size-section {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      .size-btn {
+        width: 40px;
+        height: 30px;
+        border: 1px solid #333;
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+        cursor: pointer;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      .size-btn.active {
+        transform: scale(1.1);
+        border: 2px solid #333;
+      }
+
+      .size-btn:hover {
+        transform: scale(1.1);
+        border: 2px solid #333;
+      }
+    }
+  }
 }
 
 // margins
@@ -132,17 +224,6 @@
   margin-top: 20px;
 }
 
-// .swiper-button-next {
-//   background-color: rgba(8, 34, 65, 0.7);
-//   padding: 20px;
-//   border-radius: 50%;
-// }
-// .swiper-button-prev {
-//   color: #fff;
-//   background-color: rgba(8, 34, 65, 0.7);
-//   padding: 20px;
-//   border-radius: 50%;
-// }
 .product-details-quantity {
   display: flex;
   align-items: center;
