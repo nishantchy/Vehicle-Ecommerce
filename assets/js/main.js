@@ -75,3 +75,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   listViewButton.addEventListener("click", switchToListView);
 });
+
+//  <!-- quantity buttons -->
+document.addEventListener("DOMContentLoaded", function () {
+  var quantityInput = document.getElementById("quantity");
+  var incrementBtn = document.getElementById("increment");
+  var decrementBtn = document.getElementById("decrement");
+
+  incrementBtn.addEventListener("click", function () {
+    var currentValue = parseInt(quantityInput.value);
+    if (!isNaN(currentValue)) {
+      quantityInput.value = currentValue + 1;
+    } else {
+      quantityInput.value = 1;
+    }
+  });
+
+  decrementBtn.addEventListener("click", function () {
+    var currentValue = parseInt(quantityInput.value);
+    if (!isNaN(currentValue) && currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    } else {
+      quantityInput.value = 1;
+    }
+  });
+});
