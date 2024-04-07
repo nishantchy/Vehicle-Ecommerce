@@ -2069,8 +2069,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 @media (max-width: 768px) {
   .cart-checkout {
@@ -2082,13 +2081,12 @@ input[type=number]::-webkit-outer-spin-button {
   text-transform: uppercase;
   font-weight: 700;
   background: #222;
-  padding: 10px 25px;
+  padding: 10px 10px;
   text-align: center;
-}
-@media (max-width: 767px) {
-  .cart-checkout-title {
-    padding: 10px 100px;
-  }
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  width: 100%;
 }
 .cart-checkout-btn {
   display: flex;
@@ -2135,6 +2133,9 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 16.4px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .cart-checkout-detail-ttl span {
   font-weight: 600;

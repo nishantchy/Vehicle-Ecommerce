@@ -204,8 +204,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
 
     @media (max-width: 768px) {
       align-items: center;
@@ -215,12 +214,12 @@
       text-transform: uppercase;
       font-weight: 700;
       background: #222;
-      padding: 10px 25px;
+      padding: 10px 10px;
       text-align: center;
-
-      @media (max-width: 767px) {
-        padding: 10px 100px;
-      }
+      display: flex;
+      justify-content: space-between;
+      gap: 70px;
+      width: 100%;
     }
     &-btn {
       display: flex;
@@ -267,6 +266,9 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 16.4px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         span {
           font-weight: 600;
           color: #999999;
