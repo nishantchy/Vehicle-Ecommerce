@@ -3,6 +3,8 @@ const buttonLoader = () => {
   document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".nav-link");
 
+    if (links == null) return;
+
     links.forEach(function (link) {
       link.addEventListener("click", function (event) {
         links.forEach(function (link) {
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const listView = document.querySelector(".store-list-view");
 
   const gridListBtn = document.querySelectorAll(".grid-list");
-
+  if (gridViewButton == null) return;
   gridListBtn.forEach((btns) => {
     btns.addEventListener("click", () => {
       const tabId = btns.dataset.id;
@@ -81,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var quantityInput = document.getElementById("quantity");
   var incrementBtn = document.getElementById("increment");
   var decrementBtn = document.getElementById("decrement");
+  if (quantityInput == null) return;
 
   incrementBtn.addEventListener("click", function () {
     var currentValue = parseInt(quantityInput.value);
