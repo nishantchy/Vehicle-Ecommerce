@@ -1663,6 +1663,11 @@ img {
   line-height: 55px;
   letter-spacing: -2%;
 }
+@media (max-width: 767px) {
+  .product-details-title {
+    font-size: 30px;
+  }
+}
 .product-details-price {
   font-size: 20px;
   font-weight: 500;
@@ -1763,6 +1768,11 @@ img {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+@media (max-width: 767px) {
+  .product-details-size-section ul {
+    gap: 10px;
+  }
 }
 .product-details-size-section ul .size-btn {
   width: 40px;
