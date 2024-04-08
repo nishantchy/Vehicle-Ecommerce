@@ -1,0 +1,77 @@
+.page-logo-section {
+  max-width: 121px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.page-heading-section {
+  p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #082241;
+  }
+}
+
+.signup {
+  &-form {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+
+    label {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+    }
+    input::placeholder {
+      text-align: center;
+      color: #bebebe;
+    }
+    span {
+      color: red;
+      font-size: 20px;
+    }
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.page-btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    color: #fff;
+    background: #082241;
+    padding: 10px 25px 10px 25px;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  img {
+    width: 15px;
+  }
+}
+.login-btn-section {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -2%;
+
+  a {
+    color: #082241;
+  }
+}
