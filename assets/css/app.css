@@ -2228,4 +2228,60 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .login-btn-section a {
   color: #082241;
+}
+
+.page-margin {
+  margin-top: 130px;
+}
+
+.about-us-content p {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -2%;
+  color: #3e3e3e;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .about-us-content p {
+    font-size: 16px;
+  }
+}
+
+.faq-content p {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -2%;
+  color: #3e3e3e;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .faq-content p {
+    font-size: 16px;
+  }
+}
+.faq span {
+  color: #d71212;
+}
+
+.accordion-header button {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -2%;
+  line-height: 24px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.contact-btn button {
+  background: #082241;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.contact-btn button:hover {
+  background: #fff;
+  color: #082241;
+  border: 1px solid #082241;
 }/*# sourceMappingURL=app.css.map */

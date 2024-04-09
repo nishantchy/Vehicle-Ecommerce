@@ -1,0 +1,18 @@
+.page-margin {
+  margin-top: 130px;
+}
+
+.about-us {
+  &-content {
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: -2%;
+      color: #3e3e3e;
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

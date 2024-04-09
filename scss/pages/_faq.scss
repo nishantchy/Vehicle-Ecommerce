@@ -1,0 +1,25 @@
+.faq {
+  &-content {
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: -2%;
+      color: #3e3e3e;
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+  span {
+    color: #d71212;
+  }
+}
+.accordion-header {
+  button {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -2%;
+    line-height: 24px;
+  }
+}
