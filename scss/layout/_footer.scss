@@ -1,129 +1,123 @@
 .footer {
-    background: linear-gradient(90deg, rgba(32, 67, 108, 0.92) 0%, #082241 100%);
+  // background: linear-gradient(90deg, rgba(32, 67, 108, 0.92) 0%, #082241 100%);
 
-    &-logo {
-        max-width: 170px;
+  &-logo {
+    max-width: 170px;
+  }
+
+  &-msg {
+    p {
+      color: #fff;
+      max-width: 318px;
+      width: 100%;
+      padding-top: 15px;
+    }
+  }
+
+  &-socials-icons {
+    padding: 15px 0px;
+
+    img {
+      max-width: 30px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-title {
+    p {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+
+  &-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-items-second {
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      padding-top: 15px;
+
+      @media (max-width: 1199px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
     }
 
-    &-msg {
-        p {
-            color: #fff;
-            max-width: 318px;
-            width: 100%;
-            padding-top: 15px;
-        }
+    &-second {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-contact-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+
+    p {
+      color: #fff;
+      font-size: 18px;
+
+      @media (max-width: 1199px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
     }
 
-    &-socials-icons {
-        padding: 15px 0px;
-
-        img {
-            max-width: 30px;
-            width: 100%;
-            height: auto;
-        }
+    img {
+      max-width: 20px;
+      width: 100%;
+      height: auto;
     }
+  }
 
-    &-title {
-        p {
-            font-size: 20px;
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
+  &-copyright {
+    // background-color: #4e5660;
+
+    p {
+      color: #fff;
+      text-align: center;
+      padding: 14px 0px;
     }
-
-    &-elements {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    &-items-second {
-
-
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 20px;
-            padding-top: 15px;
-
-            @media (max-width:1199px) {
-                font-size: 18px;
-            }
-
-            @media (max-width:991px) {
-                font-size: 16px;
-            }
-
-            @media (max-width:767px) {
-                font-size: 14px;
-            }
-
-
-        }
-
-        &-second {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    &-contact-info {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 15px;
-        padding-top: 15px;
-
-        p {
-            color: #fff;
-            font-size: 18px;
-
-            @media (max-width:1199px) {
-                font-size: 18px;
-            }
-
-            @media (max-width:991px) {
-                font-size: 16px;
-            }
-
-            @media (max-width:767px) {
-                font-size: 14px;
-            }
-
-
-        }
-
-        img {
-            max-width: 20px;
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    &-copyright {
-        background-color: #111111;
-
-        p {
-            color: #fff;
-            text-align: center;
-            padding: 14px 0px;
-        }
-    }
+  }
 }
 
 .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 60px 0px 60px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0px 60px 0px;
 
-    @media (max-width:767px) {
-        align-items: start;
-        gap: 45px 0;
-    }
+  @media (max-width: 767px) {
+    align-items: start;
+    gap: 45px 0;
+  }
 }

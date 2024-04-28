@@ -20,12 +20,12 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid navigation">
           <a class="navbar-brand nav-logo" href="/"
-            ><img src="./assets/images/navbar/LOGO.png" alt=""
+            ><img src="./assets/images/navbar/paudellogo.png" alt=""
           /></a>
           <span class="navbar-line"></span>
           <button
@@ -131,7 +131,7 @@
     <main>
       <!-- Carousel Section-->
       <section class="carousel-section">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -192,10 +192,39 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div> -->
+        <!--  -->
+        <div class="swiper carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/carousel/carousel-img1.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/carousel/carousel-img2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/carousel/carousel-img1.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
-        <div class="carousel-scroll">
-          <img src="./assets/images/carousel/scroll.png" alt="" />
+        <div class="carousel-display">
+          <p class="text-center">30% OFF XXXXX BUY NOW</p>
+          <img src="./assets/images/carousel/Shopping Cart.png" alt="" />
         </div>
+        <!--  -->
+      </section>
+      <!-- background -->
+      <section class="bg-img">
+        <!-- image is provided in the css section -->
       </section>
       <!-- about us -->
       <section id="about" class="about section">
@@ -412,7 +441,7 @@
         <div class="col-12 col-md-3 col-lg-3 col-xl-3">
           <div class="footer-items">
             <div class="footer-logo">
-              <img src="./assets/images/footer/LOGO.png" alt="" />
+              <img src="./assets/images/navbar/paudellogo.png" alt="" />
             </div>
             <div class="footer-socials-icons">
               <img src="./assets/images/footer/Facebook.png" alt="" />
@@ -483,7 +512,6 @@
     <script src="./assets/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
       const choose = new Swiper(".choose-containers", {
         slidesPerView: 1,
@@ -500,7 +528,7 @@
           prevEl: ".choose-swiper-prev",
         },
       });
-
+      //
       const brands = new Swiper(".brand-content", {
         slidesPerView: 3,
         loop: true,
@@ -529,6 +557,34 @@
       });
 
       choose;
+      //
+    </script>
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      const carousel = new Swiper(".carousel", {
+        // spaceBetween: 30,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+      carousel;
     </script>
   </body>
 </html>

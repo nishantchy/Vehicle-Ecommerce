@@ -64,14 +64,13 @@
 }
 
 .choose-container {
-  // max-width: 464px;
   width: 100%;
   margin: auto;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: 0;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: #4e5660;
 
   @media (max-width: 767px) {
     padding: 25px;
@@ -169,4 +168,7 @@
     width: 30px;
     height: 30px;
   }
+}
+.about {
+  background: transparent;
 }
