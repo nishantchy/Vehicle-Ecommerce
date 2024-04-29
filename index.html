@@ -34,7 +34,7 @@
           /></a>
           <span class="navbar-line"></span>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -133,16 +133,16 @@
         <!--  -->
         <div class="swiper carousel">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide hero-slide">
               <img src="./assets/images/carousel/carousel (1).jpg" alt="" />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide hero-slide">
               <img src="./assets/images/carousel/carousel (2).jpg" alt="" />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide hero-slide">
               <img src="./assets/images/carousel/carousel (3).jpg" alt="" />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide hero-slide">
               <img src="./assets/images/carousel/carousel (4).jpg" alt="" />
             </div>
           </div>
@@ -267,43 +267,45 @@
       </section>
       <!-- Brands we rely on -->
 
-      <section class="container section">
-        <h2 class="page-title">Brands we rely on</h2>
-        <div class="brand-content swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/mahindra.png" alt="" />
-            </div>
+      <section class="section brand-main-container">
+        <div class="container">
+          <h2 class="page-title">Brands we rely on</h2>
+          <div class="brand-content swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/mahindra.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/suzuki.png" alt="" />
-            </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/suzuki.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/kia.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/tata.png" alt="" />
-            </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/kia.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/tata.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/hyundai.png" alt="" />
-            </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/hyundai.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/bajaj.png" alt="" />
-            </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/bajaj.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/renault.png" alt="" />
-            </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/renault.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/tvs.png" alt="" />
-            </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/tvs.png" alt="" />
+              </div>
 
-            <div class="swiper-slide">
-              <img src="./assets/images/brands/mercedes.png" alt="" />
+              <div class="swiper-slide">
+                <img src="./assets/images/brands/mercedes.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -501,6 +503,10 @@
       const carousel = new Swiper(".carousel", {
         // spaceBetween: 30,
         // centeredSlides: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,

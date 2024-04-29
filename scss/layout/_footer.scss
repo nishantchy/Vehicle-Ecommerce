@@ -1,5 +1,6 @@
 .footer {
   // background: linear-gradient(90deg, rgba(32, 67, 108, 0.92) 0%, #082241 100%);
+  background: rgb(0, 82, 150, 0.8);
 
   &-logo {
     max-width: 170px;
@@ -27,9 +28,9 @@
   &-title {
     p {
       font-size: 20px;
-      color: #fff;
+      color: #d71212;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 700;
     }
   }
 

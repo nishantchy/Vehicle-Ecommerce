@@ -5,16 +5,24 @@
     height: 100vh;
 
     @media (max-width: 767px) {
-      object-fit: contain;
+      object-fit: cover;
     }
   }
+}
+.hero-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-slide.hero-slide-active {
+  opacity: 1;
 }
 
 .carousel-section::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: #000;
+  background: rgb(0, 82, 150, 0.8);
   opacity: 15%;
   z-index: 10;
 }
@@ -26,7 +34,7 @@
   align-items: center;
   gap: 2px;
   color: #fff;
-  background: #4e5660;
+  background: #005296;
   z-index: 99;
   bottom: 0;
   width: 100%;
