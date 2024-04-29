@@ -179,8 +179,18 @@
   right: 175px;
   display: block;
 }
+a {
+  text-decoration: none;
+}
+i {
+  font-size: 25px;
+  color: #fff;
+  display: flex;
 
-.search img {
+  align-items: center;
+}
+
+.search i {
   @media (max-width: 991px) {
     display: none;
   }
