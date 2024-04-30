@@ -464,6 +464,7 @@ i {
 
 .choose {
   padding-bottom: 83px;
+  background: rgba(2, 17, 35, 0.5);
 }
 
 .choose-main-container {
@@ -485,21 +486,41 @@ i {
 }
 
 .about {
-  background: transparent;
+  background: rgba(2, 17, 35, 0.5);
 }
 
 .carousel-section {
   position: relative;
+  background: #005296;
 }
 .carousel-section img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100vh;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .carousel-section img {
+    height: 100vh;
+    width: 1199px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 991px) {
+  .carousel-section img {
+    height: 90vh;
+    width: 991px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 @media (max-width: 767px) {
   .carousel-section img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 70vh;
+    width: 767px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -564,6 +585,11 @@ i {
   color: #fff;
   font-size: 24px;
 }
+@media (max-width: 767px) {
+  .autoplay-progress {
+    display: none;
+  }
+}
 
 .autoplay-progress svg {
   --progress: 0;
@@ -581,6 +607,31 @@ i {
   transform: rotate(-90deg);
 }
 
+/* Increase the specificity for the .swiper-pagination class */
+.carousel-section .swiper .swiper-pagination {
+  position: absolute;
+  right: 56px;
+  bottom: 66px;
+  z-index: 100;
+}
+
+/* Increase the specificity for the .swiper-pagination-bullet class */
+.swiper .swiper-pagination-bullet {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #d71212;
+  width: 12px;
+  height: 12px;
+}
+
+/* Increase the specificity for the .swiper-pagination-bullet-active class */
+.swiper .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.banner {
+  background: rgba(2, 17, 35, 0.5);
+}
 .banner-img {
   height: 385px;
   max-width: 400px;
@@ -889,6 +940,9 @@ i {
   transform: scale(1.1);
 }
 
+.categories {
+  background: rgba(2, 17, 35, 0.5);
+}
 .categories-heading {
   display: flex;
   justify-content: space-between;
@@ -970,6 +1024,10 @@ i {
 
 .category:hover img {
   transform: scale(1.1);
+}
+
+.recent-products {
+  background: rgba(2, 17, 35, 0.5);
 }
 
 .recent-heading {
