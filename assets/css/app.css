@@ -492,36 +492,18 @@ i {
 .carousel-section {
   position: relative;
   background: #005296;
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Horizontally center the image */
+  padding-top: 110px; /* Adjust this value to match the height of your fixed navbar */
+  padding-bottom: 60px; /* Adjust this value to match the height of your fixed navbar */
 }
+
 .carousel-section img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100vh; /* Adjusted to account for navbar height */
   -o-object-fit: contain;
-     object-fit: contain;
-  height: 100vh;
-  width: 100%;
-}
-@media (max-width: 1199px) {
-  .carousel-section img {
-    height: 100vh;
-    width: 1199px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media (max-width: 991px) {
-  .carousel-section img {
-    height: 90vh;
-    width: 991px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media (max-width: 767px) {
-  .carousel-section img {
-    height: 70vh;
-    width: 767px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
+     object-fit: contain; /* Maintain aspect ratio while fitting image within container */
 }
 
 .hero-slide {
@@ -610,9 +592,13 @@ i {
 /* Increase the specificity for the .swiper-pagination class */
 .carousel-section .swiper .swiper-pagination {
   position: absolute;
-  right: 56px;
-  bottom: 66px;
+  bottom: 0;
   z-index: 100;
+}
+@media (max-width: 767px) {
+  .carousel-section .swiper .swiper-pagination {
+    display: none;
+  }
 }
 
 /* Increase the specificity for the .swiper-pagination-bullet class */
